@@ -1,11 +1,11 @@
 import React from 'react';
 
-function MetaData(props) {
+function RentMovies(props) {
     return (
         <div>
-            MetaData
+            RentMovies
         </div>
     );
 }
 
-export default MetaData;
+export default RentMovies;

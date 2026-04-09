@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Cast(props) {
+function Actors(props) {
     return (
         <div>
-            Cast
+            Actors
         </div>
     );
 }
 
-export default Cast;
+export default Actors;

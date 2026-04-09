@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Vip(props) {
+function Categories(props) {
     return (
         <div>
-            Vip
+            Categories
         </div>
     );
 }
 
-export default Vip;
+export default Categories;

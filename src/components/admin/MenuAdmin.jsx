@@ -13,7 +13,7 @@ function MenuAdmin(props) {
 
     const [Menu, setmMenu] = useState(false);
     return (
-        <div className={`flex flex-col p-3 bg-linear-to-r from-[#1e293b] to-[#475569] text-white md:h-screen transition-all duration-500 ease-in-out ${Menu ? "md:w-23" : "md:w-49"}`}>
+        <div className={`flex flex-col p-3 bg-linear-to-r from-[#1e293b] to-[#475569] text-white md:h-screen transition-all duration-500 ease-in-out ${Menu ? "md:w-23" : "md:w-51"}`}>
             <div className="flex justify-center items-center relative">
                 {!Menu ? <div className='flex justify-center items-center gap-1'>
                     <h1 className='text-blue-500 text-2xl font-bold'>FIMO</h1>
