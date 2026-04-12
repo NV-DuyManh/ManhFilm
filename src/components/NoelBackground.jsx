@@ -16,7 +16,11 @@ import santa from "../assets/santa-claus-hat.png";
 import snowman from "../assets/snowman.png";
 
 const NOEL_IMAGES = [
-    footer1, footer2, gift1, gift2, gift3, gift4, gift5, gift6, giving1, giving2, giving3, santa, snowman
+    footer1, footer2, gift1, gift2, gift3, gift4, gift5, gift6, giving1, giving2, giving3, santa, snowman,
+    "https://cdn-icons-png.flaticon.com/512/3468/3468377.png",
+    "https://cdn-icons-png.flaticon.com/512/3468/3468379.png",
+    "https://cdn-icons-png.flaticon.com/512/3468/3468382.png",
+    "https://cdn-icons-png.flaticon.com/512/3468/3468386.png",
 ];
 
 export default function NoelBackground() {
