@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import ModalCategory from './ModalCategory';
 import Search from "../../../../components/admin/Search";
 import { addDocument } from '../../../../services/firebaseService';
+import TableCategory from './TableCategory';
 const inner = { name: "", description: "" };
 function Categories(props) {
     const [open, setOpen] = React.useState(false);
@@ -26,6 +27,7 @@ function Categories(props) {
         <div>
             <Search open={open} setOpen={setOpen} handleClickOpen={handleClickOpen} handleClose={handleClose} />
             <ModalCategory addCategory={addCategory} onChangeInput={onChangeInput} open={open} setOpen={setOpen} handleClickOpen={handleClickOpen} handleClose={handleClose} />
+            <TableCategory/>
         </div>
     );
 }
