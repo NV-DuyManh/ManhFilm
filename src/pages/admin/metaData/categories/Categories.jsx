@@ -19,15 +19,29 @@ function Categories(props) {
     }
     const addCategory = async () => {
         console.log(category);
-        
-           await addDocument("Categories",category);
-           handleClose();
+
+        await addDocument("Categories", category);
+        handleClose();
     }
     return (
         <div>
-            <Search open={open} setOpen={setOpen} handleClickOpen={handleClickOpen} handleClose={handleClose} />
-            <ModalCategory addCategory={addCategory} onChangeInput={onChangeInput} open={open} setOpen={setOpen} handleClickOpen={handleClickOpen} handleClose={handleClose} />
-            <TableCategory/>
+            <Search
+                open={open}
+                name={"Categories"}
+                setOpen={setOpen}
+                handleClickOpen={handleClickOpen}
+                handleClose={handleClose} />
+            <ModalCategory
+                addCategory={addCategory}
+                onChangeInput={onChangeInput}
+                open={open}
+                setOpen={setOpen}
+                handleClickOpen={handleClickOpen}
+                handleClose={handleClose} />
+            <TableCategory
+                setCategory={setCategory}
+                handleClickOpen={handleClickOpen}
+            />
         </div>
     );
 }

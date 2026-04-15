@@ -45,6 +45,7 @@ function CategoriesType(props) {
     return (
         <div>
             <Search
+            name = {"Categories Type"}
                 open={open}
                 setOpen={setOpen}
                 handleClickOpen={handleClickOpen}

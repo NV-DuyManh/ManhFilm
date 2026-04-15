@@ -1,12 +1,12 @@
 import React from 'react';
 import { BsSearch } from 'react-icons/bs';
 import { IoIosAddCircle, IoIosAddCircleOutline, IoMdAddCircle } from 'react-icons/io';
-function Search({ handleClickOpen }) {
+function Search({ handleClickOpen, name }) {
 
     return (
         <div className='grid lg:grid-cols-8 gap-3 p-4 bg-black/20 text-white'>
             <h1 className='font-bold text-3xl glow-text lg:col-span-2 '>
-                List Categories
+                List {name}
             </h1>
 
             <div className="search lg:col-span-4">
