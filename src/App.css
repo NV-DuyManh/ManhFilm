@@ -1,15 +1,7 @@
 @keyframes gradientMove {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 .glass {
@@ -19,19 +11,25 @@
     border-radius: 14px;
 }
 
+/* TEXT */
 .glow-text {
     background: linear-gradient(90deg, #60a5fa, #a78bfa, #38bdf8, #22d3ee, #818cf8, #60a5fa);
     background-size: 200% auto;
+
+    background-clip: text;
     -webkit-background-clip: text;
+
+    color: transparent;
     -webkit-text-fill-color: transparent;
+
     animation: textMove 4s linear infinite;
 }
 
+/* SEARCH */
 .search {
     position: relative;
 }
 
-/* input */
 .search-input {
     width: 100%;
     padding: 0.5rem 2.5rem 0.5rem 1rem;
@@ -58,8 +56,7 @@
     box-shadow: 0 0 15px rgba(34, 197, 94, 0.7);
 }
 
-/* 🔥 cái bạn cần */
-.search-input:focus+.search-icon {
+.search-input:focus + .search-icon {
     color: #4ade80 !important;
 }
 
@@ -74,34 +71,128 @@
     transition: all 0.3s ease;
 }
 
-/* hover icon → vàng (chỉ khi KHÔNG focus input) */
 .search-icon:hover {
     color: #facc15;
     transform: translateY(-50%) scale(1.1);
     filter: drop-shadow(0 0 6px rgba(250, 204, 21, 0.8));
 }
 
+/* TEXT ANIMATION */
 @keyframes textMove {
-    0% {
-        background-position: 0% center;
-    }
-
-    100% {
-        background-position: 200% center;
-    }
+    0% { background-position: 0% center; }
+    100% { background-position: 200% center; }
 }
 
-
+/* SPIN */
 .spin {
-  animation: spin 1s linear infinite;
-  font-size: 18px;
+    animation: spin 1s linear infinite;
+    font-size: 18px;
 }
 
 @keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* ================= TABLE ================= */
+
+.table-wrapper {
+    padding: 2px; /* 👈 tạo lớp viền ngoài */
+    border-radius: 16px;
+
+    background: linear-gradient(
+        120deg,
+        rgba(0, 255, 255, 0.4),
+        rgba(139, 92, 246, 0.4)
+    );
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.5),
+        0 0 25px rgba(0, 255, 255, 0.15);
+}
+
+.table-container {
+    background: rgba(15, 23, 42, 0.92);
+    border-radius: 14px;
+    overflow: hidden;
+
+    border: 1px solid rgba(255, 255, 255, 0.06); /* 👈 viền trong */
+}
+
+/* HEADER */
+.table-header {
+    background: linear-gradient(90deg, #06b6d4, #8b5cf6);
+    height: 42px;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+.table-header th {
+    color: #e0f2fe;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 10px 12px;
+}
+
+/* BODY */
+.table-row {
+    height: 42px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    transition: 0.2s;
+}
+
+.table-row:hover {
+    background: rgba(59, 130, 246, 0.06);
+}
+
+.table-cell {
+    color: #e5e7eb;
+    font-size: 13px;
+    padding: 10px 12px;
+}
+
+/* BUTTON */
+.action-btn {
+    padding: 4px 8px;
+    border-radius: 6px;
+    transition: 0.2s;
+    border: none;
+}
+
+.action-btn svg {
+    font-size: 14px;
+}
+
+/* EDIT */
+.btn-edit {
+    background: linear-gradient(90deg, #22d3ee, #3b82f6);
+    color: white;
+}
+
+.btn-edit:hover {
+    box-shadow: 0 0 6px #38bdf8;
+}
+
+/* DELETE */
+.btn-delete {
+    background: linear-gradient(90deg, #f97316, #ef4444);
+    color: white;
+}
+
+.btn-delete:hover {
+    box-shadow: 0 0 6px #f97316;
+}
+
+/* FOOTER */
+.table-footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 14px;
+    background: rgba(15, 23, 42, 0.9);
+    color: #cbd5f5;
+}
+
+/* OPTIONAL HOVER GLOW */
+.table-container:hover {
+    box-shadow: 0 0 20px rgba(139,92,246,0.2);
 }
