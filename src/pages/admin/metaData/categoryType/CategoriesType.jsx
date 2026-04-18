@@ -1,15 +1,3 @@
-// import React from 'react';
-
-// function CategoriesType(props) {
-//     return (
-//         <div>
-//             Categories Type
-//         </div>
-//     );
-// }
-
-// export default CategoriesType;
-
 import React, { useState } from 'react';
 import ModalCategoryType from './ModalCategoryType';
 import Search from "../../../../components/admin/Search";

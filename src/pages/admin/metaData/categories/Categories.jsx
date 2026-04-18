@@ -27,7 +27,7 @@ function Categories(props) {
         newError.name = category.name ? "" : "Please enter your name";
         newError.description = category.description ? "" : "Please enter your description";
         setError(newError);
-        return Object.values(newError).some(e => e !== "");  // true => co loi 
+        return Object.values(newError).some(e => e !== "");  
     }
     const addCategory = async () => {
         if (validation()) {
