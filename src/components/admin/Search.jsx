@@ -5,7 +5,7 @@ import { IoMdAddCircle } from 'react-icons/io';
 function Search({ handleClickOpen, name }) {
 
     return (
-        <div className='grid lg:grid-cols-8 gap-3 p-4 bg-black/20 text-white items-center'> {/* Thêm items-center ở đây */}
+        <div className='grid lg:grid-cols-8 gap-3 p-4 bg-black/20 text-white items-center'> 
             <h1 className='font-bold text-3xl glow-text lg:col-span-2 '>
                 List {name}
             </h1>
@@ -20,8 +20,7 @@ function Search({ handleClickOpen, name }) {
                 <BsSearch className="search-icon" />
             </div>
             
-            {/* Thanh chứa nút ADD được căn chỉnh chuẩn */}
-            <div className="lg:col-span-2 flex justify-end items-center"> {/* items-center */}
+            <div className="lg:col-span-2 flex justify-end items-center"> 
                 <button onClick={handleClickOpen} className="btn-add">
                     ADD <IoMdAddCircle />
                 </button>

@@ -299,43 +299,39 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 6px; /* Giảm gap cho gọn */
-    padding: 6px 16px; /* Giảm padding ngang và dọc để thon gọn */
-    border-radius: 8px; /* Bo góc nhẹ hơn, hiện đại hơn */
+    gap: 6px; 
+    padding: 6px 16px; 
+    border-radius: 8px; 
     font-weight: 700;
-    font-size: 13px; /* Giảm font-size cho tinh tế */
-    text-transform: uppercase; /* Chữ in hoa cho ngầu */
+    font-size: 13px; 
+    text-transform: uppercase; 
     letter-spacing: 1px;
     
-    /* STYLE NEON CYAN CHÍNH */
     color: #ffffff;
-    background: transparent; /* Nền trong suốt */
-    border: 2px solid #00FFFF; /* Viền sáng Neon Xanh Băng */
+    background: transparent; 
+    border: 2px solid #00FFFF; 
     cursor: pointer;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     
-    /* Hiệu ứng phát sáng Neon "mặc định" */
     box-shadow: 0 0 10px rgba(0, 255, 255, 0.4), inset 0 0 5px rgba(0, 255, 255, 0.2);
-    /* Hiệu ứng phát sáng chữ (Neon Text) */
     text-shadow: 0 0 5px #00FFFF; 
 }
 
 .btn-add:hover {
-    transform: translateY(-1px); /* Nảy nhẹ lên */
+    transform: translateY(-1px);
     
-    /* Khi HOVER: Đổ đầy màu và tăng hiệu ứng phát sáng */
+
     background: #00FFFF;
-    color: #111827; /* Màu chữ tối để nổi trên nền sáng */
-    text-shadow: none; /* Tắt glow chữ khi nền đã sáng */
+    color: #111827; 
+    text-shadow: none; 
     
-    /* Hiệu ứng phát sáng Neon cực mạnh khi Hover */
     box-shadow: 0 0 15px rgba(0, 255, 255, 0.8), 
                 0 0 30px rgba(0, 255, 255, 0.6), 
-                0 0 10px rgba(255, 255, 255, 0.8) inset; /* Thêm chút ánh trắng ở giữa */
+                0 0 10px rgba(255, 255, 255, 0.8) inset; 
 }
 
-/* Style Icon trong nút */
+
 .btn-add svg {
-    font-size: 18px; /* Giảm kích thước icon */
+    font-size: 18px; 
     transition: transform 0.3s ease;
 }
